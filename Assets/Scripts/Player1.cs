@@ -153,8 +153,8 @@ public class Player1 : MonoBehaviour
         jumping = true;
         rigidbody.velocity = new Vector2(0, 3f);
 
-        while (jumping == true)
-        {
+        
+        
             if (direction == 1 && Input.GetKey(KeyCode.RightArrow))
             {
                 Flip();
@@ -167,7 +167,7 @@ public class Player1 : MonoBehaviour
                 transform.position += Vector3.left * 1.5f * Time.deltaTime;
                 if (grounded == true) jumping = false;
             }
-        }
+        
 
         //rigidbody.AddForce(new Vector3(0f, 15f, 0f), ForceMode2D.Impulse);
 
